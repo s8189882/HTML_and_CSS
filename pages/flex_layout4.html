@@ -1,0 +1,66 @@
+<!DOCTYPE html> <!-- Layout 4 Demo -->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Layout 4 using Flexbox</title>
+        <style>
+        * {
+            box-sizing: border-box; 
+        }
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: row;
+            margin: 0;
+        }
+        .outer-col-1 {
+            background:  rgb(223, 94, 14);
+            flex: 1;
+        }
+        .outer-col-2 {
+            display: flex;
+            flex-direction: column;
+            flex: 5;
+        }
+        .inner-row {
+            display: flex;
+            flex-direction: row;
+        }
+        .inner-col {
+            flex: 4;
+        }
+        .inner-row article {
+            min-height: 60vh;
+            background: brown;
+        }
+        .inner-row aside {
+            background: rgb(223, 94, 14);
+            flex: 1;
+        }
+        header, footer {
+            background: rgb(237, 141, 17);
+            align-content: center;
+            height: 20vh;
+        }
+        header, footer, article, nav, aside {
+            padding: 2em;
+        }
+        </style>
+     </head>
+    <body>
+      <nav class="outer-col-1">Nav</nav>
+      <div class="outer-col-2">
+          <header>Header</header>
+        <div class="inner-row">
+          <div class="inner-col">
+            <article>
+                <h2>First Article</h2>
+                    <p>In the spring of 1997, an art collector in Geneva received a call from a contact at the city’s office of bankruptcies and legal proceedings. There was an auction coming up, of an estate that had gone unclaimed for nine years, and among the lots was a painting that the collector might want to take a look at: a canvas attributed to the British artist Lucian Freud. The collector was a businessman, originally from North Africa, who was used to picking up furniture and art works at competitive prices from Geneva’s plentiful array of galleries, antique dealers, and salesrooms. He is keen to preserve his privacy, so I will call him Omar.</p>
+            </article>
+              <footer>Footer</footer>
+          </div>
+            <aside>Aside</aside>
+        </div>
+      </div>
+    </body>
+</html>

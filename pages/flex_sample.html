@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Demo Flexbox</title>
+        <style>
+            body {
+                padding: 2em;
+            }
+
+            .headerContainer {
+                display: flex;
+                flex-flow: column wrap;
+                align-content: center;
+                background: mediumvioletred;
+                font-weight: bold;
+                padding: 10px;
+                color: mistyrose;
+            }
+
+            .footerContainer {
+                display: flex;
+                flex-flow: column wrap;
+                align-content: center;
+                background: maroon;
+                font-weight: bold;
+                padding: 10px;
+                color: cornsilk;
+            }
+
+            .mainContainer {
+                display: flex;
+                flex-flow: row wrap;
+                font-weight: bold;
+                text-align: center;
+            }
+
+            .mainContentItem {
+                text-align: left;
+                background: rgb(242, 219, 219);
+            }
+
+            .article {
+                padding: 10px;
+                margin: 10px;
+                background: wheat;
+            }
+
+            .sidebarItem {
+                flex: 1 0 0;
+                border: 0px solid brown;
+            }
+
+            .mainContentItem {
+                flex: 3 0px;
+                order: 2;
+            }
+
+            .sidebarLeftItem {
+                background: indigo;
+                color: aliceblue;
+                order: 1;
+            }
+
+            .sidebarRightItem {
+                background: purple;
+                color: aliceblue;
+                order: 3;
+            }
+        </style>
+
+    </head>
+    <body>
+        <header class="headerContainer"><h1>Header Sample Flexbox</h1></header>
+        <div class="mainContainer">
+            <section class="mainContentItem">
+                <article>
+                    <h2>First Article</h2>
+                    <p>In the spring of 1997, an art collector in Geneva received a call from a contact at the city’s office of bankruptcies and legal proceedings. There was an auction coming up, of an estate that had gone unclaimed for nine years, and among the lots was a painting that the collector might want to take a look at: a canvas attributed to the British artist Lucian Freud. The collector was a businessman, originally from North Africa, who was used to picking up furniture and art works at competitive prices from Geneva’s plentiful array of galleries, antique dealers, and salesrooms. He is keen to preserve his privacy, so I will call him Omar.</p>
+                </article>
+                <article>
+                    <h2>Second Article</h2>
+                    <p>From a distance, the grey volcanic rock pyramids and their encircling stonewalls looked like something that Mother Nature had wrought herself. Located in Cañada de La Virgen (The Valley of the Virgin), an area about 30 miles outside the city of San Miguel de Allende in Mexico's central highlands, the stone formations blended into the arid, desiccated landscape like a diminutive mountain range.</p>
+                </article>
+                <article>
+                    <h2>Third Article</h2>
+                    <p>Do you start your mornings with a potent dose of caffeine from a freshly brewed cup of Joe? Or do you prefer a slightly less caffeinated nudge from a warm and gentle cup of tea?</p>
+                    <p>Whatever your preference, scientists have found that regularly drinking coffee or tea can provide a variety of health benefits. But how do coffee and tea compare in a head-to-head matchup? We took a look at the research, and here’s what we found.</p>
+                </article>
+            </section>
+            <sideBar class="sidebarItem sidebarLeftItem">Left Side Bar</sideBar>
+            <sideBar class="sidebarItem sidebarRightItem">Right Side Bar</sideBar>
+        </div>
+        <footer class="footerContainer">Footer</footer>
+    </body>
+</html>
